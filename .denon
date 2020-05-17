@@ -1,0 +1,27 @@
+{
+  "files": [
+    "mod.ts"
+  ],
+  "quiet": false,
+  "debug": true,
+  "fullscreen": true,
+  "extensions": [
+    ".ts",
+    ".json"
+  ],
+  "interval": 500,
+  "watch": [
+    "src/"
+  ],
+  "deno_args":[
+    "--allow-net",
+    "--allow-read",
+    "--unstable"
+  ],
+  "execute": {
+    ".js": ["deno", "run"],
+    ".ts": ["deno", "run"]
+  },
+  "fmt": false,
+  "test": true
+}
