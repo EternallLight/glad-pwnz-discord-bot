@@ -1,10 +1,10 @@
-import Client from "./Discordeno/module/client.ts";
+import Client from "https://raw.githubusercontent.com/Skillz4Killz/Discordeno/v1/module/client.ts";
 import { configs } from "./configs.ts";
-import { Intents } from "./Discordeno/types/options.ts";
+import { Intents } from "https://raw.githubusercontent.com/Skillz4Killz/Discordeno/v1/types/options.ts";
 import { eventHandlers } from "./src/events/eventHandlers.ts";
-import { Message } from "./Discordeno/structures/message.ts";
+import { Message } from "https://raw.githubusercontent.com/Skillz4Killz/Discordeno/v1/structures/message.ts";
 import { Command } from "./src/types/commands.ts";
-import { Guild } from "./Discordeno/structures/guild.ts";
+import { Guild } from "https://raw.githubusercontent.com/Skillz4Killz/Discordeno/v1/structures/guild.ts";
 
 export const botCache = {
   commands: new Map<string, Command>(),
@@ -45,6 +45,7 @@ export const BotOptions = {
   intents: [
     Intents.GUILDS,
     Intents.GUILD_MESSAGES,
+    Intents.GUILD_MEMBERS,
     Intents.DIRECT_MESSAGES,
   ],
   // These are all your event handler functions. Currently, being imported from a file called eventHandlers from the events folder
