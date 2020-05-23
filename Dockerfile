@@ -1,3 +1,6 @@
+# docker build -t denobot .
+# docker run --init -i -t -e DISCORDENO_TOKEN="<DISCORD_TOKEN>" -e DISCORDENO_BOTID="<DISCORD_BOT_ID>" denobot
+
 FROM hayd/alpine-deno:1.0.0
 
 WORKDIR /app
