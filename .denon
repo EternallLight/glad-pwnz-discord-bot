@@ -1,28 +1,19 @@
 {
-  "files": [
-    "mod.ts"
-  ],
-  "quiet": false,
-  "debug": true,
-  "fullscreen": true,
-  "extensions": [
-    ".ts",
-    ".json"
-  ],
-  "interval": 500,
-  "watch": [
-    "src/"
-  ],
-  "deno_args":[
-    "--allow-net",
-    "--allow-read",
-    "--allow-env",
-    "--unstable"
-  ],
-  "execute": {
-    ".js": ["deno", "run"],
-    ".ts": ["deno", "run"]
+  "env": {
+    "DISCORDENO_PREFIX": "",
+    "DISCORDENO_TOKEN": "",
+    "DISCORDENO_BOTID": ""
   },
-  "fmt": false,
-  "test": true
+  "scripts": {
+    "start": {
+      "cmd": "deno run mod.ts",
+      "desc": "Start the bot",
+      "unstable": true
+    }
+  },
+  "allow": [
+    "read",
+    "net",
+    "env"
+  ]
 }
