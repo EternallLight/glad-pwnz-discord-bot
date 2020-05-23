@@ -1,5 +1,5 @@
-import { Guild } from "https://raw.githubusercontent.com/Skillz4Killz/Discordeno/v1/structures/guild.ts";
-import { ChannelTypes } from "https://raw.githubusercontent.com/Skillz4Killz/Discordeno/v1/types/channel.ts";
+import { Guild } from "https://raw.githubusercontent.com/Skillz4Killz/Discordeno/v4/structures/guild.ts";
+import { ChannelTypes } from "https://raw.githubusercontent.com/Skillz4Killz/Discordeno/v4/types/channel.ts";
 
 export let guild: Guild;
 export const guildCreate = async (g: Guild) => {

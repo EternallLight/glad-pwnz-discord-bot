@@ -1,4 +1,4 @@
-import { Message } from "https://raw.githubusercontent.com/Skillz4Killz/Discordeno/v1/structures/message.ts";
+import { Message } from "https://raw.githubusercontent.com/Skillz4Killz/Discordeno/v4/structures/message.ts";
 import { botCache } from "../../mod.ts";
 
 export const lastPwnageCommand = (message: Message) => {
@@ -8,7 +8,7 @@ export const lastPwnageCommand = (message: Message) => {
         title: 'Latest pwnage report',
         type: 'rich',
         description: 'The enemy xKRISATXx has been OWNED!!1',
-        url: 'https://adengate.ru/',
+        url: 'http://adengate.ru/',
         color: 15576321,
         author: {
           name: 'xzxGLADDRUPALPWNZxzx'
